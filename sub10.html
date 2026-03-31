@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Sheets Embed</title>
+</head>
+<body>
+    <h1>Minha Planilha Atualizada</h1>
+
+    <script>
+        const iframe = document.createElement('iframe');
+        const rand = Math.floor(Math.random() * 1000000); // gera número aleatório
+        iframe.src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTRfTmyBzu7I-EpNfSJPGa0As8MW_tmz6uja0JB60ySZHeAtAAvengPiiasLEYVP8ODTow33OJvTfuu/pubhtml?widget=true&headers=false&rand=" + rand;
+        iframe.width = "100%";
+        iframe.height = "600";
+        iframe.frameBorder = "0";
+        iframe.scrolling = "auto";
+        document.body.appendChild(iframe);
+    </script>
+</body>
+</html>
